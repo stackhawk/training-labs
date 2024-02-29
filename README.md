@@ -81,8 +81,8 @@ You can check your current Docker version by running the following command in yo
 # HawkScan Training Guides
 Below, you can find the OS-specific, step-by-step guides that are to be followed in tandem with this training. These include all commands and instructions needed to follow along.
 
-## [**MacOS Training Guide**](https://github.com/ajstinn2/StackHawk-Developer-Training/blob/main/MacOSTrainingGuide.md) 
-## [**Windows Training Guide**](https://github.com/ajstinn2/StackHawk-Developer-Training/blob/main/WindowsOSTrainingGuide.md)
+## [**MacOS Training Guide**](https://github.com/stackhawk/training-labs/blob/main/MacOSTrainingGuide.md) 
+## [**Windows Training Guide**](https://github.com/stackhawk/training-labs/blob/main/WindowsOSTrainingGuide.md)
 
 You are more than welcome to get a head start on the above steps prior to training or to follow these guides at your own pace.
 As always, if you have any questions, please don't hesitate to reach out to us at support@stackhawk.com
