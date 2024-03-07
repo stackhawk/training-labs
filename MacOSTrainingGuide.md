@@ -49,19 +49,16 @@ git clone git@github.com:kaakaww/javaspringvulny.git
 
 Alternatively, if you are not set up to clone repositories with Git, you can download Java Spring Vulny as a Zip file [here!](https://github.com/kaakaww/javaspringvulny). It will be located in your downloads folder and needs to be moved to the home directory.
 
-Next, we need to launch Java Spring Vulny in a Docker container. From this point, you should be in the home directory in the terminal. Use the following command to move into the Java Spring Vulny directory. 
+Next, we need to launch Java Spring Vulny so it's alive and running. To keep things easy, we are going to download and run a JAR version of the application. Run the following command to download the application
 
 ```
-cd javaspringvulny
-```
-
-> [!NOTE]
-> If you pulled down this repo through a Zip file. The directory will be named **javaspringvulny-main**, and you will need to run `cd javaspringvulny-main`
-
-Next, to launch Java Spring Vulny in a Docker Container, we need to run the following docker command from the javaspringvulny directory.
+curl -Ls https://github.com/kaakaww/javaspringvulny/releases/download/0.2.0/java-spring-vuly-0.2.0.jar -o ./java-spring-vuly-0.2.0.jar
 
 ```
-docker-compose up
+Then use this command to get the application running locally on your computer.
+
+```
+java -jar ./java-spring-vuly-0.2.0.jar
 ```
 
 If executed correctly, we should now be able to access the running Java Spring Vulny application at https://localhost:9000/
