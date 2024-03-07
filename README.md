@@ -33,14 +33,6 @@ You can log in to your StackHawk Account by navigating to [**app.stackhawk.com**
 <details>
 <summary><ins>MacOS</summary>
 
-### [**Docker**](https://docs.docker.com/desktop/install/mac-install/)
-A recent version of Docker is required to launch and run JavaSpringVulny (Our vulnerability testing application). Unless you have a specific reason, I recommend using the latest version.
-
-You can check your current Docker version by running the following command in your terminal
-
- ```
- docker --version
-```
 
  ### [**HomeBrew**](https://docs.brew.sh/Installation)
  HomeBrew is required to download and install the HawkScan CLI Tool. Check your current HomeBrew version by running the following command in your terminal and update as needed.
