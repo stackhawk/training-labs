@@ -1,13 +1,15 @@
-# StackHawk Developer Training: Getting Started With HawkScan - MacOS Training Guide
+# StackHawk Developer Training: Getting Started With HawkScan - MacOS / Linux Training Guide
 
 This guide will be used in tandem with the live training given by the StackHawk Team. It can also be used in a self-paced fashion to walk through the steps of getting started with HawkScan. Throughout the training, we will reference specific commands that must be entered in your terminal. Those commands are outlined below, with detailed descriptions.
 
 ## Step 1: _Installing HawkScan_
-There are multiple different methods for [downloading](https://docs.stackhawk.com/stackhawk-cli/#installation-overview) the HawkScan CLI tool. But for the purpose of this training, we will install HawkScan via HomeBrew. Run the following brew command in your terminal to download and install the latest version of HawkScan.
+There are multiple different methods for [downloading](https://docs.stackhawk.com/download.html) the HawkScan CLI tool. But for the purpose of this training, we will install HawkScan via our PKG installer. Run the following curl command in your terminal to download and install the latest version of HawkScan.
 
 
 ```
-brew install stackhawk/cli/hawk
+curl -v https://download.stackhawk.com/hawk/pkg/hawk-3.8.0.pkg -o hawk-3.8.0.pkg &&\
+sudo installer -pkg hawk-3.8.0.pkg -target /Applications &&\
+rm hawk-3.8.0.pkg
 ```
 
 You can check to see what version of HawkScan you currently have installed by running,
@@ -15,13 +17,8 @@ You can check to see what version of HawkScan you currently have installed by ru
 ```
 hawk version
 ```
->v3.7.0 is the latest
+>v3.8.0 is the latest
 
-If you have an existing version of HawkScan that needs to be upgraded. You can upgrade to the latest version by running,
-
-```
-brew upgrade hawk
-```
 
 ## Step 2: _Authenticating To StackHawk_
 Now that HawkScan is installed locally, we need to authenticate with the StackHawk platform to tie your scans back to your account.
