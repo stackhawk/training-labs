@@ -3,7 +3,7 @@
 This guide will be used in tandem with the live training given by the StackHawk Team. It can also be used in a self-paced fashion to walk through the steps of getting started with HawkScan. Throughout the training, we will reference specific commands that must be entered in your terminal. Those commands are outlined below, with detailed descriptions.
 
 ## Step 1: _Installing HawkScan_
-There are multiple different methods for [downloading](https://docs.stackhawk.com/download.html) the HawkScan CLI tool. But for the purpose of this training, we will install HawkScan via our MSI Installer. Run the following command in your terminal to download and install the latest version of HawkScan.
+There are multiple install methods and [downloads](https://docs.stackhawk.com/download.html) of the HawkScan CLI tool. But for the purpose of this training, we will install HawkScan via our MSI Installer. Run the following command in your terminal to download and install the latest version of HawkScan.
 
 
 ```
