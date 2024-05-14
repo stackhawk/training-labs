@@ -3,11 +3,11 @@
 This guide will be used in tandem with the live training given by the StackHawk Team. It can also be used in a self-paced fashion to walk through the steps of getting started with HawkScan. Throughout the training, we will reference specific commands that must be entered in your terminal. Those commands are outlined below, with detailed descriptions.
 
 ## Step 1: _Installing HawkScan_
-There are multiple different methods for [downloading](https://docs.stackhawk.com/stackhawk-cli/#installation-overview) the HawkScan CLI tool. But for the purpose of this training, we will install HawkScan via our MSI Installer. Run the following command in your terminal to download and install the latest version of HawkScan.
+There are multiple install methods and [downloads](https://docs.stackhawk.com/download.html) of the HawkScan CLI tool. But for the purpose of this training, we will install HawkScan via our MSI Installer. Run the following command in your terminal to download and install the latest version of HawkScan.
 
 
 ```
-msiexec.exe /i https://download.stackhawk.com/hawk/msi/hawk-3.7.0.msi /passive
+msiexec.exe /i https://download.stackhawk.com/hawk/msi/hawk-3.9.0.msi /passive
 ```
 
 You can check to see what version of HawkScan you currently have installed by running,
@@ -15,7 +15,7 @@ You can check to see what version of HawkScan you currently have installed by ru
 ```
 hawk version
 ```
->v3.7.0 is the latest
+>v3.9.0 is the latest
 
 
 ## Step 2: _Authenticating To StackHawk_
@@ -105,14 +105,10 @@ app:
 
 - **Host**: This is telling the scanner where it can go out and access the application.
 
-To kick off the scan against JavaSpringVulny using the basic configuration, we need first to pass your saved Application  ID as an environment variable. Insert your saved ApplicationID into the following command and run it in your terminal. Then, follow that up with the Hawk Scan command.
+To kick off the scan against JavaSpringVulny using the basic configuration, insert your saved ApplicationID into the following command and run it in your terminal.
 
 ```
-$env:APP_ID = "XXXXXXX"
-```
-
-```
-hawk scan /stackhawk.d/stackhawk.yml
+$env:APP_ID = "XXXXX"; hawk scan /stackhawk.d/stackhawk.yml
 ```
 
 If successful, you will start to see lines in your terminal about your configuration, the scanner spidering URLs, and then, ultimately, the vulnerabilities found in the application.
@@ -149,14 +145,10 @@ app:
 ```
 This configuration tells the scanner where and how to authenticate with the application. We tell it how to find the login forms, what username and password to inject, and even what cookie to use. You may notice that this configuration does not include the **ApplicationID**, **Environment**, or **Host**. With HawkScan, we can use multiple YAML files to instruct the scanner.
 
-To kick off this authenticated scan, we will use the same commands as last time but add the `stackhawk-auth-form-cookie.yml` to the end of the Hawk Scan command. The commands you run should match the following.
+To kick off this authenticated scan, we will use the same command as last time but add the `stackhawk-auth-form-cookie.yml` to the end of the Hawk Scan command. The command you run should match the following.
 
 ```
-$env:APP_ID = "XXXXXXX"
-```
-
-```
-hawk scan stackhawk.d/stackhawk.yml stackhawk.d/stackhawk-auth-form-cookie.yml
+$env:APP_ID = "XXXXX"; hawk scan stackhawk.d/stackhawk.yml stackhawk.d/stackhawk-auth-form-cookie.yml
 ```
 
 Just like the first scan, you will see the scanner spidering the application and the vulnerabilities that are found.
