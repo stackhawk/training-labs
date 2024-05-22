@@ -24,7 +24,7 @@ hawk version
 Ahora que HawkScan está instalado localmente, necesitamos autenticarnos con la plataforma de StackHawk para vincular sus escaneos a su cuenta.
 
 Primero, necesitamos crear una clave API. Inicie sesión en StackHawk a través de un navegador web y navegue a **Settings> API Keys> Create New API Key**. También puede hacer clic [aquí](https://app.stackhawk.com/settings/apikeys) para acceder a la página de creación de la clave API.
-> [¡ADVERTENCIA!]
+> [!WARNING]
 > Solo se le mostrará su **clave API completa** una vez. Asegúrese de copiarla y guardarla en algún lugar para más tarde.
 
 Ahora, necesitamos usar esa clave API para autenticarnos en StackHawk. Ejecute el siguiente comando en su terminal.
