@@ -82,9 +82,16 @@ HawkScan responderá con un **_Kaakaww!!_** para informarle que la creación fue
 
 ## Paso 5: _Ejecutando HawkScan_
 El momento que hemos estado esperando: ¡ejecutar HawkScan contra nuestra aplicación!
-Debería seguir estando en el directorio **JavaSpringVulny** dentro de su terminal. Aquí es donde queremos ejecutar HawkScan, ya que es donde se encuentran nuestros archivos de configuración específicos de la aplicación.
+Ahora necesitamos movernos del directorio principal al directorio **JavaSpringVulny** dentro de su terminal.
 
->Si está de vuelta en el directorio principal, use `cd javaspringvulny` para moverse al directorio necesario.
+```
+cd javaspringvulny
+```
+
+Aquí es donde queremos ejecutar HawkScan, ya que es donde se encuentran nuestros archivos de configuración específicos de la aplicación.
+
+> [!NOTE]
+> Si descargó este repositorio a través de un archivo Zip, el directorio se llamará **javaspringvulny-main** y necesitará ejecutar `cd javaspringvulny-main`
 
 HawkScan utiliza archivos YAML para instruir al escáner sobre cómo interactuar con su aplicación. Estos archivos pueden incluir todo, desde decirle al escáner dónde se encuentra la aplicación en funcionamiento, hasta instruirle sobre cómo autenticarse con su aplicación.
 
