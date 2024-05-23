@@ -1,5 +1,7 @@
 # Entrenamiento de Desarrolladores de StackHawk: Guía de Entrenamiento de Windows para Comenzar con HawkScan
 
+[![en](https://img.shields.io/badge/lang-en-red.svg)](WindowsOSTrainingGuide.md)[![es](https://img.shields.io/badge/lang-es-yellow.svg)](WindowsOSTrainingGuide.es.md)
+
 Esta guía se utilizará junto con el entrenamiento en vivo impartido por el equipo de StackHawk. También se puede usar de forma autodidacta para recorrer los pasos de cómo comenzar con HawkScan. A lo largo del entrenamiento, haremos referencia a comandos específicos que deben ingresarse en su terminal. Esos comandos se detallan a continuación, con descripciones detalladas.
 
 ## Paso 1: _Instalación de HawkScan_
