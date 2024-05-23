@@ -1,5 +1,7 @@
 # Formación para Desarrolladores de StackHawk: Empezando con HawkScan
 
+[![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)[![es](https://img.shields.io/badge/lang-es-yellow.svg)](README.es.md)
+
 Esta formación está dirigida a desarrolladores y tiene como objetivo ayudar a los usuarios a comenzar a usar la herramienta **DAST** (Dynamic Application Security Testing) de **StackHawk**, **HawkScan**. Esta formación paso a paso permite ver el poder de HawkScan de primera mano.
 
 ### **Durante esta formación, cubriremos lo siguiente.**    
