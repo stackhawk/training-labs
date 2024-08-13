@@ -9,9 +9,9 @@ There are multiple install methods and [downloads](https://docs.stackhawk.com/do
 
 
 ```
-curl -v https://download.stackhawk.com/hawk/pkg/hawk-4.0.0.pkg -o hawk-4.0.0.pkg &&\
-sudo installer -pkg hawk-4.0.0.pkg -target /Applications &&\
-rm hawk-4.0.0.pkg
+curl -v https://download.stackhawk.com/hawk/pkg/hawk-4.1.0.pkg -o hawk-4.1.0.pkg &&\
+sudo installer -pkg hawk-4.1.0.pkg -target /Applications &&\
+rm hawk-4.1.0.pkg
 ```
 
 You can check to see what version of HawkScan you currently have installed by running,
@@ -19,7 +19,7 @@ You can check to see what version of HawkScan you currently have installed by ru
 ```
 hawk version
 ```
->v4.0.0 is the latest
+>v4.1.0 is the latest
 
 
 ## Step 2: _Authenticating To StackHawk_

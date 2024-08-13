@@ -9,7 +9,7 @@ Existen múltiples métodos de instalación y [descarga](https://docs.stackhawk.
 
 
 ```
-msiexec.exe /i https://download.stackhawk.com/hawk/msi/hawk-4.0.0.msi /passive
+msiexec.exe /i https://download.stackhawk.com/hawk/msi/hawk-4.1.0.msi /passive
 ```
 
 Puede comprobar qué versión de HawkScan tiene instalada actualmente ejecutando,
@@ -17,7 +17,7 @@ Puede comprobar qué versión de HawkScan tiene instalada actualmente ejecutando
 ```
 hawk version
 ```
->La última versión es v4.0.0.
+>La última versión es v4.1.0.
 
 
 ## Paso 2: _Autenticación de StackHawk_
