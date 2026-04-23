@@ -1,0 +1,39 @@
+app:
+  applicationId: ${APP_ID:f5ee2290-3383-415c-96c7-ee0a398d90b9}
+  env: ${APP_ENV:dev-training}
+  host: ${APP_HOST:https://localhost:9000}
+  excludePaths:
+    - "/logout"
+  antiCsrfParam: "_csrf"
+  authentication:
+    usernamePassword:
+      type: FORM
+      loginPath: /login
+      loginPagePath: /login
+      usernameField: username
+      passwordField: password
+      scanUsername: "janesmith"
+      scanPassword: "password"
+    cookieAuthorization:
+      cookieNames:
+        - "JSESSIONID"
+    testPath:
+      path: /search
+      success: "HTTP.*200.*"
+    loggedInIndicator: "\\QSign Out\\E"
+    loggedOutIndicator: ".*Location:.*/login.*"
+  openApiConf:
+    path: /openapi
+    includeAllMethods: true
+    includedMethods:
+      - POST
+      - PUT
+    customVariables:
+      - field: text
+        values:
+          - "test value one"
+          - "test value two"
+      - field: searchText
+        values:
+          - "test search one"
+          - "test search two"
