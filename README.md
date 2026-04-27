@@ -10,17 +10,17 @@ Welcome to the StackHawk SME Training lab. This session goes beyond the basics o
 
 ### 1. Sign Into StackHawk
 
-Log into your StackHawk account at [app.stackhawk.com](https://app.stackhawk.com). If you do not yet have access, reach out to your team lead or StackHawk contact before the session.
+Log into your StackHawk account at [app.stackhawk.com](https://app.stackhawk.com). If you do not yet have access, reach out to an admin on your StackHawk account or your StackHawk point of contact before the session.
 
 ### 2. Verify Java
 
-You will need Java JDK 11 or higher. Run the following to check:
+You will need Java JDK 11 or higher. We recommend **JDK 17** as it works best with our tooling. Newer versions in the 20s may cause compatibility issues, so JDK 17 is the safest choice. Run the following to check your current version:
 
 ```bash
 java -version
 ```
 
-If Java is not installed or below version 11, download and install the latest JDK from [adoptium.net](https://adoptium.net) before continuing.
+If Java is not installed or below version 11, download and install JDK 17 from [adoptium.net](https://adoptium.net) before continuing.
 
 ### 3. Install HawkScan
 
@@ -57,6 +57,8 @@ hawk version
 ### 4. Create a Training Directory and Download the Required Files
 
 Create a folder for the training and download both required files into it.
+
+*Expand the section for your operating system below.*
 
 <details>
 <summary><strong>macOS</strong></summary>
@@ -103,4 +105,8 @@ Once your prerequisites are complete, select the guide for your operating system
 
 ---
 
-If you run into any issues getting set up before the session, reach out to your StackHawk contact or email [support@stackhawk.com](mailto:support@stackhawk.com) — we are happy to help ahead of time.
+If you run into any issues getting set up before the session, reach out to your StackHawk contact or email [support@stackhawk.com](mailto:support@stackhawk.com). We are happy to help ahead of time.
+
+---
+
+**Session Slide Deck:** [View the training presentation](https://docs.google.com/presentation/d/16yrA7Xnnt6j5aNuuWwWc9gu-zqXmTMx7ELJx2hPSBm8/edit?usp=sharing)
