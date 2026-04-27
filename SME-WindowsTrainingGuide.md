@@ -91,10 +91,6 @@ app:
     loggedOutIndicator: ".*Location:.*/login.*"
   openApiConf:
     path: /openapi
-    includeAllMethods: true
-    includedMethods:
-      - POST
-      - PUT
     customVariables:
       - field: text
         values:
@@ -168,14 +164,9 @@ StackHawk supports OpenAPI and Swagger specs, GraphQL schemas, gRPC definitions,
 ```yaml
   openApiConf:
     path: /openapi
-    includeAllMethods: true
-    includedMethods:
-      - POST
-      - PUT
 ```
 
 - **path**: Points HawkScan at the running application's OpenAPI endpoint to pull the spec automatically at scan time. Alternatively, if you have the spec as a local file, you can use `filePath: path/to/openapi.yaml` instead. HawkScan supports both.
-- **includeAllMethods / includedMethods**: Controls which HTTP methods are tested. Explicitly including `POST` and `PUT` ensures write operations are scanned, not just read endpoints.
 
 ```yaml
     customVariables:

@@ -24,10 +24,6 @@ app:
     loggedOutIndicator: ".*Location:.*/login.*"
   openApiConf:
     path: /openapi
-    includeAllMethods: true
-    includedMethods:
-      - POST
-      - PUT
     customVariables:
       - field: text
         values:
