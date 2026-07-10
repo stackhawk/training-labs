@@ -1,0 +1,56 @@
+# Agentic StackHawk Setup: GitHub Copilot
+
+This guide installs the StackHawk skills into **GitHub Copilot**. The skills teach Copilot how to run the scanner, interpret results, and reason about code-level fixes. Make sure you have already completed **Part 1** (installing and authenticating the `hawk` CLI) for your operating system.
+
+_For the full reference, see StackHawk's [GitHub Copilot](https://docs.stackhawk.com/ai-security/agent-skills/copilot/) documentation._
+
+## Step 1: _Add the StackHawk marketplace_
+
+```
+copilot plugin marketplace add stackhawk/agent-skills-marketplace
+```
+
+## Step 2: _Install the skills_
+
+Then install the **`wingman`** umbrella plugin, which pulls in the full skill set in one install:
+
+```
+copilot plugin install wingman@stackhawk
+```
+
+<details>
+<summary>If your Copilot version doesn't support the umbrella plugin</summary>
+
+Install the skills individually instead:
+
+```
+copilot plugin install hawkscan@stackhawk
+copilot plugin install stackhawk-api@stackhawk
+copilot plugin install hawkscan-ci@stackhawk
+copilot plugin install stackhawk-data-seed@stackhawk
+copilot plugin install stackhawk-optimize@stackhawk
+```
+</details>
+
+## Step 3: _Verify the install_
+
+Confirm the skills are active by asking Copilot:
+
+```text
+What StackHawk skills do you have?
+```
+
+It should list the StackHawk skills, including HawkScan scanning and API reporting. You can also check them in VS Code under **GitHub Copilot > Configure Skills**, or in `~/.agents/skills/`.
+
+> [!NOTE]
+> The skills work best with a current flagship model, which handles the multi-step scan, fix, and rescan workflow well.
+
+## Next: Run the lab
+
+Your agent is ready. Head to **Part 3** to run the find-fix-verify loop:
+
+[![The Agentic Loop](https://img.shields.io/badge/The%20Agentic%20Loop-Start%20the%20lab-00d7d2?style=for-the-badge)](../../lab/agentic-loop.md)
+
+---
+
+If you run into any issues or have questions along the way, reach out to our support team at support@stackhawk.com. We're happy to help.

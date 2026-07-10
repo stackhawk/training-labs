@@ -1,5 +1,10 @@
 # Capacitación para desarrolladores de StackHawk: introducción a HawkScan
 
+> [!WARNING]
+> **Esta es la capacitación heredada (legacy) de StackHawk para desarrolladores**, para ejecutar HawkScan manualmente en tu propio entorno. Se conserva aquí como referencia y ya no se actualiza ni se mantiene.
+>
+> 👉 Para la capacitación actual y con soporte, consulta las **[guías de Agentic StackHawk](../README.md)**.
+
 [![en](https://img.shields.io/badge/lang-en-red.svg)](README.md)[![es](https://img.shields.io/badge/lang-es-yellow.svg)](README.es.md)
 
 Esta capacitación está dirigida a desarrolladores y tiene como objetivo que los usuarios comiencen a usar la herramienta de pruebas dinámicas de seguridad de aplicaciones (Dynamic Application Security Testing, DAST) de StackHawk: HawkScan. Esta capacitación paso a paso le permite explorar la potencia de HawkScan de primera mano.
@@ -15,10 +20,6 @@ Esta capacitación está dirigida a desarrolladores y tiene como objetivo que lo
 * Configuración del escáner
 * Mejores prácticas de análisis
 
-La presentación de diapositivas de esta capacitación se puede previsualizar a través del siguiente enlace.
-
-[**Introducción a HawkScan: capacitación para desarrolladoress**](https://docs.google.com/presentation/d/1TtBFtU7fglIisO6GwrtA-gTCw0UOLZL-5aHvPnHYQqA/edit?usp=sharing) 
-
 # Requisitos previos
 Los siguientes requisitos previos son necesarios para completar con éxito esta capacitación práctica. Los requisitos previos son los mismos independientemente del sistema operativo (MacOS, Linux, Windows).
 
@@ -29,7 +30,7 @@ Para participar y completar esta formación con éxito, necesitarás acceso a la
 
 > _Si ya tienes acceso a una cuenta de StackHawk, por favor no crees una organización adicional. Hacerlo añadirá pasos innecesarios a la formación..._
 
-Puedes iniciar sesión en tu cuenta de StackHawk navegando a [**app.stackhawk.com**](app.stackhawk.com). 
+Puedes iniciar sesión en tu cuenta de StackHawk navegando a [**app.stackhawk.com**](https://app.stackhawk.com). 
 </details>
 
 <details>
