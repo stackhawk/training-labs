@@ -1,12 +1,12 @@
 # StackHawk Developer Training: Getting Started With Agentic StackHawk
 
-This training gets you started on your journey with agentic security testing using StackHawk. Instead of running scans by hand and triaging findings on your own, you point your AI coding agent at your running application and let it do the work. It configures the scan, runs StackHawk's runtime testing against your app, interprets the results, and fixes what it finds, then rescans to confirm the fix. This step-by-step training lets you watch that find-fix-verify loop happen firsthand.
+This training gets you started on your journey with agentic security testing using StackHawk. Instead of running scans by hand and triaging findings on your own, you point your AI coding agent at your running application and let it do the work. It configures the scan, runs StackHawk's dynamic testing against your app, interprets the results, and fixes what it finds, then rescans to confirm the fix. This step-by-step training lets you watch that find-fix-verify loop happen firsthand.
 
 You can follow this training on your own at your own pace, or alongside a live session with the StackHawk team.
 
 ### **Throughout this training, we will cover the following.**
 
-* How agentic runtime testing works, and how it compares to doing it by hand
+* How agentic dynamic testing works, and how it compares to doing it by hand
 * Installing the `hawk` CLI
 * Installing the StackHawk skills in your AI coding agent
 * Pointing your agent at your own running application
@@ -44,7 +44,7 @@ You will need one of the supported AI coding agents installed: **Claude Code**, 
 
 You will scan your own application, so have one ready to point your agent at. You need:
 
-* A running application in a development or test environment. Avoid scanning production, since runtime testing sends real attack payloads.
+* A running application in a development or test environment. Avoid scanning production, since dynamic testing sends real attack payloads.
 * Its source code open in your AI agent's workspace, so the agent can both scan the app and fix what it finds.
 
 If you don't have an app of your own on hand, a deliberately vulnerable test app is available to scan instead.

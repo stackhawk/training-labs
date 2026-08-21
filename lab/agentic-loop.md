@@ -1,6 +1,6 @@
 # The Agentic Loop
 
-This is the core of the training. You point your AI coding agent at a running application and watch it run the find-fix-verify loop: it configures the scan, runs StackHawk's runtime testing, interprets the findings, fixes them in code, and rescans to confirm the fixes, all from plain-language instructions.
+This is the core of the training. You point your AI coding agent at a running application and watch it run the find-fix-verify loop: it configures the scan, runs StackHawk's dynamic testing, interprets the findings, fixes them in code, and rescans to confirm the fixes, all from plain-language instructions.
 
 This guide is the same no matter which operating system or AI agent you set up. Before you start, finish **Part 1** (the `hawk` CLI, installed and authenticated) and **Part 2** (the StackHawk skills, installed in your agent).
 
@@ -8,13 +8,13 @@ _If anything does not go the way this guide describes, the [Troubleshooting](tro
 
 ## With and without an agent
 
-Runtime testing exercises your running application the way an attacker would and reports the real, exploitable issues it finds. It tests your running app rather than reading your source, so what changes with an agentic workflow is who does the work around the scan. Configuring the scan, running it, reading the results, fixing what turns up, and checking the fix are all steps a developer can do by hand, and plenty of teams do. With an agent, those steps happen through a conversation instead: your agent already understands your application, so it writes the scan configuration, runs the scan, connects each runtime finding back to the code that caused it, fixes it in your source, and rescans to confirm, with you directing along the way.
+Dynamic testing exercises your running application the way an attacker would and reports the real, exploitable issues it finds. It tests your running app rather than reading your source, so what changes with an agentic workflow is who does the work around the scan. Configuring the scan, running it, reading the results, fixing what turns up, and checking the fix are all steps a developer can do by hand, and plenty of teams do. With an agent, those steps happen through a conversation instead: your agent already understands your application, so it writes the scan configuration, runs the scan, connects each runtime finding back to the code that caused it, fixes it in your source, and rescans to confirm, with you directing along the way.
 
 One of the most useful things the agent handles for you is writing the `stackhawk.yml` scan configuration, including working out how your app authenticates so the scan can reach the pages behind your login. You will see it do this in a moment.
 
 ## Step 1: _Starting Your App_
 
-You will scan your own application, so open its source code in your AI agent's workspace. That way the agent can both scan the app and fix what it finds. Then get it running in a development or test environment. Avoid scanning production, since runtime testing sends real attack payloads.
+You will scan your own application, so open its source code in your AI agent's workspace. That way the agent can both scan the app and fix what it finds. Then get it running in a development or test environment. Avoid scanning production, since dynamic testing sends real attack payloads.
 
 Start the app the way you normally do. If you would rather watch the agent do the work, you can ask it to start the app for you, which is a nice first look at the agent driving your project:
 
@@ -29,8 +29,10 @@ Keep it running, and note the URL it is serving on, such as `http://localhost:80
 In your AI agent, give it a single, plain-language instruction. You do not have to hand it any scanner configuration, which is the nice part: the agent works it out from your app.
 
 ```text
-Set up security scanning for my app running at <your app's URL> and scan it for vulnerabilities.
+Set up security scanning for my app running at <your app's URL> and scan it for vulnerabilities. Don't fix anything yet, just show me what you find.
 ```
+
+_The loop is autonomous by design. That last line is a training pause so we can look at the findings together before anything gets fixed._
 
 <details>
 <summary>What the agent is doing under the hood</summary>
@@ -87,7 +89,7 @@ That is the whole loop. Scan, fix, rescan, verified, driven entirely by plain la
 | Fix | You research and edit each issue yourself | The agent remediates the source from the scanner's evidence, using its knowledge of your codebase |
 | Verify | You rerun the scan and compare | The agent rescans the checks that fired and confirms what is resolved |
 
-In one conversation you configured, scanned, fixed, and verified your own app, without writing a scan config or triaging a finding yourself. That is agentic runtime testing.
+In one conversation you configured, scanned, fixed, and verified your own app, without writing a scan config or triaging a finding yourself. That is agentic dynamic testing.
 
 ## Where to go next
 
