@@ -1,6 +1,6 @@
 # Agentic StackHawk Setup: macOS
 
-This guide installs the `hawk` CLI and authenticates it with StackHawk. Your AI agent uses the `hawk` CLI behind the scenes to run the runtime testing against your app. When you finish here, move on to installing the skills for your AI agent.
+This guide installs the `hawk` CLI and authenticates it with StackHawk. Your AI agent uses the `hawk` CLI behind the scenes to run dynamic testing against your app. When you finish here, move on to installing the skills for your AI agent.
 
 _For the full install reference, see StackHawk's [Install & Run HawkScan](https://docs.stackhawk.com/getting-started/install-and-run/) documentation._
 

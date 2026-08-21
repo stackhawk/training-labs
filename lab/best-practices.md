@@ -1,6 +1,6 @@
 # Best Practices
 
-A few habits make agentic runtime testing work well day to day. None of them are complicated, and most of them fall out naturally once your agent is driving the loop.
+A few habits make agentic dynamic testing work well day to day. None of them are complicated, and most of them fall out naturally once your agent is driving the loop.
 
 ## Scan early, in development
 
@@ -34,7 +34,7 @@ The main flows need a logged-in user with at least one order on file. Seed that.
 
 ## Avoid running active scans against production
 
-Runtime testing is active. It sends real attack payloads, and that can create, change, or delete data in whatever it is pointed at. That is exactly what you want against a development or test environment, and something you'll want to avoid against production.
+Dynamic testing is active. It sends real attack payloads, and that can create, change, or delete data in whatever it is pointed at. That is exactly what you want against a development or test environment, and something you'll want to avoid against production.
 
 Keep your scanning on development, test, and staging environments where writing data is safe. The whole agentic model is built around scanning and fixing locally as you build, so this lines up naturally. Point the loop at your local app rather than your live one. This is where the real payoff is: finding and fixing an issue in a lower environment means you ship more secure code to production, instead of shipping the vulnerability out into the wild where someone could exploit it.
 
